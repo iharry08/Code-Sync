@@ -63,7 +63,6 @@ io.on('connection', (socket) => {
     });
 });
 
-// const PORT = process.env.PORT || 5000;
-// server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
+const PORT = process.env.PORT || 5000;
+server.listen(PORT, () => console.log('Listening on port'+ PORT));
+
