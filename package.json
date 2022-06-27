@@ -26,9 +26,9 @@
     "npm": "^8.13.1"
   },
   "scripts": {
-      "start:front": "react-scripts start",
+      "start:front": "react-scripts --max_old_space_size=4096 start",
       "start": "npm run build && npm run server:prod",
-      "build": "react-scripts build",
+      "build": "react-scripts --max_old_space_size=4096 build",
       "server:dev": "nodemon server.js",
       "server:prod": "node server.js",
       "test": "react-scripts test",
